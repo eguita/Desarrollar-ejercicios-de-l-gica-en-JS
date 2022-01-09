@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <h1>Ejercicios de JavaScripts</h1>
+    <script>
+        /*Programa una función que dada una cadena de texto cuente el número de vocales y consonantes
+        pe. miFuncion("Hola Mundo") devuelva Vocales: 4, Consonantes: 5.*/
+        const contarLetras=(cadena="") =>{
+          if (!cadena) return conosle.warn("No ingresastes una cadena de texto");
+          if (typeof cadena!=="string") return console.error("El valor '${cadena}' ingresada no es una cadena de texo");
+          let vocales=0,
+            consonantes=0;
+          cadena=cadena.toLocaleLowerCase(); /*Convierte el texto en minuscula*/
+          for (let letra of cadena){
+            if (/[aeiouáéíóú]/.test(letra)) vocales++;
+              if (/[bcdfghjklmnñpqrstvwxyz]/.test(letra)) consonantes++;
+          }
+          return console.info({
+            cadena,
+            vocales,
+            consonantes
+          })
+        }
+
+        contarLetras("Hola");
+        
+
+        
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

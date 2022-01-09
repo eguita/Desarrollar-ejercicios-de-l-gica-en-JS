@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 1</title>
+  </head>
+  <body>
+    <h1>Ejercicios de JavaScripts</h1>
+    <script>
+      // Programa una función que dado un arreglo de elementos, elimine los duplicados, 
+      //pe. miFuncion(["x", 10, "x", 2, "10", 10, true, true]) devolverá ["x", 10, 2, "10", true].
+      const eliminar = (_arreglo = undefined) => {
+        if (_arreglo === undefined) return console.log(`No ingreso valor al arreglo`);
+        if (!(_arreglo instanceof Array))
+          return console.log(`Debe ingresar un arreglo`);
+
+        return console.log({
+          conRepeticion: _arreglo.map((elem) => elem),
+          sinRepeticion: [...new Set(_arreglo)],
+        });
+      };
+
+      eliminar(["x", "x", 10, "x", "10", 10, "x", true, true, 2]);
+
+     
+    </script>
+  </body>
+</html>

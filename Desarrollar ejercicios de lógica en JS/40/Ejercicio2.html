@@ -1,0 +1,42 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <h1>Ejercicios de JavaScripts</h1>
+    <script>
+      /*Programa una función que valide que un texto sea un nombre válido, 
+      pe. miFuncion("Jonathan MirCha") devolverá verdadero.*/
+      const validarnombre =(nombre="")=>{
+        if (!nombre) return console.warn("No ingresaste un nombre");
+        if (typeof nombre!=="string") return console.error('el valor "${nombre}" ingresado No es una cadena de texto')
+        let expReg=/^[A-Za-zÑñÁáÉéÍíÓóÚú\s]+$/g.test(nombre);
+
+        return (expReg)
+          ?console.info('"${nombre}", es un nombre valido')
+          :console.warn('"${nombre}",No es un nombre valido');
+      }
+      validarnombre();
+      validarnombre(3);
+      validarnombre("Edgar villavicencio");
+      validarnombre("edgar villavicenico,23");
+      
+        
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
