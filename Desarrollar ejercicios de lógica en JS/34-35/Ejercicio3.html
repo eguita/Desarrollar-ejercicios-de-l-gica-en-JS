@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <h1>Ejercicios de JavaScripts</h1>
+    <script>
+     const cadenaAArreglo = (cadena="", separador= undefined)=>
+     (!cadena)
+        ?console.warn("No ingresaste una cadena de texto")
+        :(separador === undefined)
+         ?console.warn("no ingresaste el caracter separador")
+         :console.info(cadena.split(separador));
+         
+     cadenaAArreglo("lorem ipsun dolor sit", " ");
+     cadenaAArreglo("Enero, Febreo, Marzo, Abril, Mayo, Junio, Julio, Agosto, Septiembre, Octubre, Noviembre, Diciembre", ",");
+     cadenaAArreglo(" Hola que tal", " ");  
+        
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

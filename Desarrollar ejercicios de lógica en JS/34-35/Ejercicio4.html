@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <h1>Ejercicios de JavaScripts</h1>
+    <script>
+     const repetirTexto = (texto="", veces= undefined) => {
+     if(!texto)return console.warn("No ingresaste texto");
+     if (veces === undefined) return console.warn("No ingresaste el numero de vecesa a repetir el texto");
+     if (veces === 0) return console.error("El numero de veces no puede ser cero");
+     if (Math.sign(veces)=== -1) return console.error("El numero no puede ser negativo");
+     for (let i=1; i<= veces; i++) console.info(`${texto},${i}`);
+     }
+     repetirTexto("Hola mundo", 3);
+     //repetirTexto("Hola mundo", 0);
+     //repetirTexto("Hola mundo", -20);
+     //repetirTexto("", -20);
+     //repetirTexto("Hola mundo"); 
+
+        
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
